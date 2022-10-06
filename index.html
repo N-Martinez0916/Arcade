@@ -1,19 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script defer src="app.js"></script>
     <title>Arcade</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-      <h1 class="Info">Mancala</h1>
-      <p classs="Info"></p>  
+      <h1 class="title">Tic - Tac - Toe</h1>
+      <h1 class="Info">Objective:</h1>
+      <p class="basic">
+        Get  three  in  a  row  to  win!!
+      </p>
     </header>
-    
+    <main>
+      <table id="board">
+        <tr>
+          <td id="0" class="box"></td>
+          <td id="1" class="box"></td>
+          <td id="2" class="box"></td>
+        </tr>
+        <tr>
+          <td id="3" class="box"></td>
+          <td id="4" class="box"></td>
+          <td id="5" class="box"></td>
+        </tr>
+        <tr>
+          <td id="6" class="box"></td>
+          <td id="7" class="box"></td>
+          <td id="8" class="box"></td>
+        </tr>
+      </table>
 
-</body>
+    </main>
+    <footer>
+      <div id="player1">
+        <form action="/index.html" target="_self">
+          <input type="text" placeholder="Player 1's Name" id="text1">
+          <input type="button" value="submit" id="submit1">
+      </form>
+        <h1 id="name1"><span id="tic">X</span></h1>
+        
+        <p id="score1">0</p>
+      </div>
+
+      <div id="player2">
+        <form action="/index.html" target="_self">
+          <input type="text" placeholder="Player 2's Name" id="text2">
+          <input type="button" value="submit" id="submit2">
+      </form>
+        <h1 id="name2"><span id="tic">O</span></h1>
+        
+        <p id="score2">0</p>
+      </div>
+
+    </footer>
+  </body>
 </html>
