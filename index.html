@@ -11,52 +11,53 @@
   <body>
     <header>
       <h1 class="title">Tic - Tac - Toe</h1>
-      <h1 class="Info">Objective:</h1>
-      <p class="basic">
-        Get  three  in  a  row  to  win!!
-      </p>
+        <h1 class="Info">Objective:</h1>
+        <p class="basic">Get three in a row to win!!</p>
+        
     </header>
-    <main>
-      <table id="board">
-        <tr>
-          <td id="0" class="box"></td>
-          <td id="1" class="box"></td>
-          <td id="2" class="box"></td>
-        </tr>
-        <tr>
-          <td id="3" class="box"></td>
-          <td id="4" class="box"></td>
-          <td id="5" class="box"></td>
-        </tr>
-        <tr>
-          <td id="6" class="box"></td>
-          <td id="7" class="box"></td>
-          <td id="8" class="box"></td>
-        </tr>
-      </table>
 
+    <main>
+      
+      <span>
+        <h1 id="winMessage"></h1>
+        <table id="board">
+          <tr>
+            <td class="box" id="0"></td>
+            <td class="box" id="1"></td>
+            <td class="box" id="2"></td>
+          </tr>
+          <tr>
+            <td class="box" id="3"></td>
+            <td class="box" id="4"></td>
+            <td class="box" id="5"></td>
+          </tr>
+          <tr>
+            <td class="box" id="6"></td>
+            <td class="box" id="7"></td>
+            <td class="box" id="8"></td>
+          </tr>
+        </table>
+      </span>
     </main>
+
     <footer>
       <div id="player1">
         <form action="/index.html" target="_self">
-          <input type="text" placeholder="Player 1's Name" id="text1">
-          <input type="button" value="submit" id="submit1">
-      </form>
-        <h1 id="name1"><span id="tic">X</span></h1>
-        
-        <p id="score1">0</p>
+          <input type="text" placeholder="Player 1's Name" id="text1" />
+        </form>
+
+        <h1 id="tic">X</h1>
       </div>
+
+      <input type="button" value="Play Again" id="playAgain" />
 
       <div id="player2">
         <form action="/index.html" target="_self">
-          <input type="text" placeholder="Player 2's Name" id="text2">
-          <input type="button" value="submit" id="submit2">
-      </form>
-        <h1 id="name2"><span id="tic">O</span></h1>
-        
-        <p id="score2">0</p>
-      </div>
+          <input type="text" placeholder="Player 2's Name" id="text2" />
+        </form>
 
+        <h1 id="tac">O</h1>
+      </div>
     </footer>
   </body>
 </html>
